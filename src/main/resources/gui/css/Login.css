@@ -1,0 +1,23 @@
+.background {
+    -fx-background-color: #000;
+}
+
+.label{
+    -fx-text-fill: #FFF;
+    -fx-font-size: 10pt;
+}
+
+.button {
+    -fx-border-color: #FFF;
+    -fx-padding: 5 22 5 22;
+    -fx-text-fill: white;
+     -fx-border-width: 1;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#151515, #000);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}

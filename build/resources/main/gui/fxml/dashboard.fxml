@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mjolnir.loki.ui.controllers.DashboardController">
+   <top>
+      <MenuBar prefHeight="32.0" styleClass="background" stylesheets="@../css/Dashboard.css" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/loki-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="180.0" styleClass="sidebar" stylesheets="@../css/Dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#openReports" prefHeight="33.0" prefWidth="183.0" text="Relatórios" />
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#openUserManager" prefHeight="33.0" prefWidth="183.0" text="Gestão de Usuários" />
+         </children></VBox>
+   </left>
+   <center>
+      <TextArea fx:id="text0" prefHeight="200.0" prefWidth="200.0" text="Lorem Ipsum&#10;&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;&#10;&quot;There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...&quot;&#10;&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula orci, mattis a metus eu, mattis condimentum enim. Quisque vitae ligula enim. Aliquam venenatis purus ut turpis volutpat commodo. Donec auctor urna eu justo placerat porttitor. Morbi vitae lacus at lectus finibus hendrerit commodo non tellus. Sed eget libero a mi lobortis finibus non non ante. Integer varius tortor nec egestas tincidunt.&#10;&#10;Integer erat libero, feugiat sed libero a, dictum posuere dolor. Aliquam condimentum felis ut dolor venenatis, a vulputate tortor tempor. Nulla id elit consequat ante feugiat tristique. Vestibulum a est non lectus accumsan varius. Fusce sagittis libero quis nibh lobortis aliquam. Vestibulum viverra nibh condimentum ligula ultricies euismod. Maecenas laoreet eros ultrices convallis faucibus.&#10;&#10;Integer egestas sapien ac sollicitudin commodo. Nulla et nunc nec turpis pretium dictum. Fusce facilisis vestibulum lacus et tincidunt. Nullam pharetra tortor ac turpis iaculis dapibus. Vivamus interdum nec ipsum vitae congue. Nullam imperdiet sed ligula vitae congue. Duis faucibus vitae eros eget ultricies. Curabitur vel consequat libero. Fusce vulputate velit in ligula posuere imperdiet. Nam eros eros, rhoncus sit amet dolor quis, hendrerit dictum diam.&#10;&#10;Suspendisse non tellus pharetra, dignissim ipsum eu, sodales lorem. Curabitur consequat sodales tortor a consequat. Ut metus odio, sodales et sapien vel, luctus venenatis velit. Donec in pulvinar odio. Duis diam erat, bibendum ut sem sit amet, porttitor facilisis leo. Praesent nibh massa, rhoncus id volutpat ut, rhoncus nec enim. Ut vitae enim faucibus, tempor odio in, commodo odio. Suspendisse sed ipsum nibh. Proin posuere eget arcu iaculis placerat. Pellentesque malesuada erat nulla, vitae varius diam convallis vel. Cras scelerisque velit ultrices quam laoreet, quis ullamcorper nulla pellentesque.&#10;&#10;Proin ante arcu, viverra at mollis nec, tempor et ex. Aliquam ut turpis vel risus tempus congue ut quis odio. Curabitur consequat ac enim non tempus. Duis pretium eleifend urna, tincidunt ultricies leo mattis nec. Quisque vehicula fringilla ligula ut cursus. Etiam vehicula feugiat imperdiet. Mauris fermentum facilisis porttitor.&#10;&#10;Generated 5 paragraphs, 319 words, 2194 bytes of Lorem Ipsum" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
